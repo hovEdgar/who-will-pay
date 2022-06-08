@@ -2,8 +2,11 @@ body {
     font-family: "Roboto", sans-serif;
     padding: 0;
     margin: 0;
-    /*background-color: #d5ecf6;*/
     background-image: url("../images/background.jpg");
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a {
@@ -65,7 +68,12 @@ button {
 button:hover {
     background: #78c1e0;
 }
-
+.description {
+    font-family: "Pacifico", cursive;
+    color: #db3eb1;
+    font-size: 25px;
+    text-align: center;
+}
 .list_of_names {
     padding: 20px 0;
     cursor: pointer;
@@ -130,8 +138,23 @@ button:hover {
 }
 
 .result_container h1 {
-    font-family: "Pacifico";
+    font-family: "Pacifico", serif;
     color: #e265b1;
     text-decoration: underline;
     text-decoration-color: #41b6e6;
+}
+
+.footer {
+    width: 40%;
+    margin: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    border: 1px solid #41b6e6;
+    border-radius: 8px;
+}
+
+.developer {
+    color: #41b6e6;
 }
